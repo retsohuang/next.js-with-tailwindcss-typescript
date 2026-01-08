@@ -1,0 +1,7 @@
+{
+  "installDependencies": true,
+  "startCommand": "pnpm install && turbo build --filter=@repo/ui && turbo dev",
+  "env": {
+    "ENABLE_CJS_IMPORTS": true
+  }
+}

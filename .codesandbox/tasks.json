@@ -7,13 +7,13 @@
     },
     {
       "name": "Build UI Library",
-      "command": "pnpm run build --filter @repo/ui"
+      "command": "turbo build --filter=@repo/ui"
     }
   ],
   "tasks": {
     "dev": {
       "name": "Development Server",
-      "command": "pnpm run dev",
+      "command": "turbo dev",
       "runAtStart": true,
       "preview": {
         "port": 3000
@@ -21,11 +21,11 @@
     },
     "build": {
       "name": "Build All",
-      "command": "pnpm run build"
+      "command": "turbo build"
     },
     "build:ui": {
       "name": "Build UI Library",
-      "command": "pnpm run build --filter @repo/ui"
+      "command": "turbo build --filter=@repo/ui"
     }
   }
 }
