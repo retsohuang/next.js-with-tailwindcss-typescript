@@ -1,0 +1,31 @@
+{
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    },
+    {
+      "name": "Build UI Library",
+      "command": "pnpm run build --filter @repo/ui"
+    }
+  ],
+  "tasks": {
+    "dev": {
+      "name": "Development Server",
+      "command": "pnpm run dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    },
+    "build": {
+      "name": "Build All",
+      "command": "pnpm run build"
+    },
+    "build:ui": {
+      "name": "Build UI Library",
+      "command": "pnpm run build --filter @repo/ui"
+    }
+  }
+}
