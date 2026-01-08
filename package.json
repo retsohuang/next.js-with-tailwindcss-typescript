@@ -2,19 +2,18 @@
   "name": "monorepo",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter @repo/ui build && pnpm --filter @repo/web dev",
-    "build": "pnpm --filter @repo/ui build && pnpm --filter @repo/web build",
-    "build:ui": "pnpm --filter @repo/ui build",
-    "build:web": "pnpm --filter @repo/web build",
-    "dev:web": "pnpm --filter @repo/web dev",
-    "clean": "pnpm -r run clean"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "clean": "turbo clean"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
-    "prettier": "^3.1.0"
+    "prettier": "^3.1.0",
+    "turbo": "^2.0.0"
   },
   "packageManager": "pnpm@8.10.0",
   "engines": {
