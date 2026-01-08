@@ -9,7 +9,8 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./styles": "./dist/styles/variables.css"
+    "./styles": "./dist/styles/variables.css",
+    "./theme": "./dist/styles/theme.css"
   },
   "files": [
     "dist"
